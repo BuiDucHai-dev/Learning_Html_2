@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Bioumjan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side with Image -->
+        <div class="left-side">
+            <img src="resource/login/login.png" alt="Supplement Image" class="left-image">
+            <img class="logo"
+                 src="resource/Bioumjan.png" />
+        </div>
+
+        <!-- Right Side with Form -->
+        <div class="right-side">
+            <h1 class="form-title">Sign in to Bioumjan</h1>
+            <form class="signup-form">
+                <label for="username">Username</label>
+                <br />
+                <input type="text" id="username" placeholder="Enter your username">
+
+                <label for="password">Password</label>
+                <br />
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <button type="submit" class="submit-btn">SIGN IN</button>
+            </form>
+            <p class="login-text">Don't have an account? <a href="sign_up.html" class="login-link">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Container */
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* Left Side */
+    .left-side {
+        flex: 1;
+        background-color: #f5f5f5;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Right Side */
+    .right-side {
+        flex: 1;
+        margin: auto;
+        /*        padding: 40px 60px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-title {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 500;
+        line-height: 24px;
+        word-wrap: break-word;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .signup-form {
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+
+    .signup-form label {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        color: #555;
+    }
+
+    .signup-form input {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .submit-btn:hover {
+        background-color: #333;
+    }
+
+    .login-text {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+    }
+
+    .login-link {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .login-link:hover {
+        text-decoration: underline;
+    }
+</style>

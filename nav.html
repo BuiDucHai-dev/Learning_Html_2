@@ -1,0 +1,147 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Menu Left -->
+        <div class="nav-left">
+            <a href="#" class="nav-item">Our Products</a>
+            <a href="#" class="nav-item">Our Science</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">News</a>
+        </div>
+
+        <!-- Logo Center -->
+        <div class="nav-center">
+            <img class="logo" 
+                 src="resource/Bioumjan.png"/>
+        </div>
+
+        <!-- Search and Icons Right -->
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Find your supplement">
+                <button class="search-button">
+                    <img src="resource/search-icon.png" alt="Search Icon" />
+                </button>
+            </div>
+            <a href="#" class="icon">
+                <img src="resource/cart.png" alt="Search Icon" />
+            </a>
+            <a href="#" class="icon">
+                <img src="resource/user.png" alt="Search Icon" />
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Container */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff; /* Màu nền */
+    }
+
+    /* Menu Left */
+    .nav-left {
+        margin-left: 5%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-item {
+        color: rgba(4, 6, 16, 0.88);
+        text-decoration: none;
+        color: #333;
+        font-size: 17px;
+        font-family: Roboto;
+        font-weight: 500;
+    }
+
+        .nav-item:hover {
+            color: #007BFF;
+        }
+
+    /* Logo Center */
+    .nav-center {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: space-between; /* Căn trái và phải */
+        position: relative;
+        height: 50%;
+    }
+
+    .logo {
+        max-height: 40px; /* Điều chỉnh chiều cao tối đa của hình ảnh */
+        width: auto; /* Đảm bảo hình ảnh không bị méo */
+    }
+
+    /* Menu Right */
+    .nav-right {
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Search Box */
+    .search-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 150px;
+            font-size: 12px;
+        }
+
+    .search-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .search-button img {
+            width: 20px;
+        }
+
+    /* Icons */
+    .icon {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+        .icon:hover {
+            color: #007BFF;
+        }
+
+        .icon img {
+            width: 20px;
+        }
+
+</style>

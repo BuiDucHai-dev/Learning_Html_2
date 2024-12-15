@@ -1,0 +1,226 @@
+﻿<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo và Mạng xã hội -->
+        <div class="footer-left">
+            <h2 class="footer-logo">Bioumjan</h2>
+            <div class="footer-social">
+                <a href="#"><img src="resource/footer/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="resource/footer/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="resource/footer/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="resource/footer/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="resource/footer/google.png" alt="Google"></a>
+            </div>
+        </div>
+
+        <!-- Đăng ký email -->
+        <div class="footer-center">
+            <h3>Level up your best health</h3>
+            <p>Stay updated on the latest products, special promotions. Sign up for our newsletter and stay connected with us.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Your email" />
+                <button>Sign up</button>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="footer-right">
+            <div class="footer_right_top">
+                <div class="footer-column">
+                    <h4>What we treat</h4>
+                    <ul>
+                        <li><a href="#">Sleep</a></li>
+                        <li><a href="#">Herpes</a></li>
+                        <li><a href="#">Weight Loss</a></li>
+                        <li><a href="#">Mental Health</a></li>
+                        <li><a href="#">Skin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Medical Team</a></li>
+                        <li><a href="#">Our Science</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Payment và Chính sách -->
+            <div class="footer-bottom">
+                <h2>Payment support</h2>
+                <div class="payment-support">
+                    <img src="resource/footer/Visa.png" alt="Visa">
+                    <img src="resource/footer/PayPal.png" alt="PayPal">
+                    <img src="resource/footer/UnionPay.png" alt="UnionPay">
+                    <img src="resource/footer/Mastercard.png" alt="Mastercard">
+                    <img src="resource/footer/Bitpay.png" alt="Bitpay">
+                </div>
+                <div class="footer-info">
+                    <div> © 2024 Bioumjan</div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+</footer>
+
+<style>
+    /* Footer Container */
+    .footer {
+        margin-top: 50px;
+        background-color: #f7f7f7;
+        color: #333;
+        padding: 40px 60px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Footer Left: Logo và Social */
+    .footer-left {
+        max-width: 25%;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-social a img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    /* Footer Center: Newsletter */
+    .footer-center {
+        text-align: center;
+        flex: 1;
+    }
+
+        .footer-center h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+    .newsletter {
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+        .newsletter input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+            width: 250px;
+        }
+
+        .newsletter button {
+            padding: 8px 15px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+            .newsletter button:hover {
+                background-color: #333;
+            }
+
+    /* Footer Right: Menu */
+    .footer-right {
+        max-width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer_right_top {
+        display: flex;
+        gap: 30px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+            .footer-column ul li a:hover {
+                color: #000;
+            }
+
+
+    /* Footer Bottom */
+    /*.footer-bottom {
+        margin-left: auto;*/ /* Đẩy footer-bottom về bên phải *//*\
+        display: flex;
+        flex-direction: column;*/ /* Sắp xếp các phần tử theo chiều dọc */
+        /*align-items: flex-start;*/ /* Căn lề trái cho các phần tử bên trong */
+        /*gap: 15px;
+    }*/
+
+    .payment-support {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .payment-support img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .footer-info {
+        flex-direction: row;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        margin-top: 40px;
+        align-items: start;
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        color: #040610;
+        opacity: 0.4;
+    }
+
+        .footer-info a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #040610;
+        }
+
+</style>
